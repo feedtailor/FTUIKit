@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5723621514FF2EEA009EABF7 /* FTBackgroundTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5723621314FF2EEA009EABF7 /* FTBackgroundTaskManager.h */; };
+		5723621614FF2EEA009EABF7 /* FTBackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723621414FF2EEA009EABF7 /* FTBackgroundTaskManager.m */; };
+		5734D62E14FB0DC8007A0025 /* FTNoMenuTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5734D62C14FB0DC8007A0025 /* FTNoMenuTextView.h */; };
+		5734D62F14FB0DC8007A0025 /* FTNoMenuTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */; };
+		57CAF9C81535622200D9D0F9 /* FTUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CAF9C71535622000D9D0F9 /* FTUIKit.h */; };
+		57D66C3B14D906EB004B3759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D66C3A14D906EB004B3759 /* Foundation.framework */; };
+		57D66C4E14D9080E004B3759 /* FTDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C4C14D9080E004B3759 /* FTDialogView.h */; };
+		57D66C4F14D9080E004B3759 /* FTDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C4D14D9080E004B3759 /* FTDialogView.m */; };
+		57D66C5214D9081F004B3759 /* CAAnimationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C5014D9081F004B3759 /* CAAnimationFactory.h */; };
+		57D66C5314D9081F004B3759 /* CAAnimationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C5114D9081F004B3759 /* CAAnimationFactory.m */; };
+		57D66C5614D908B2004B3759 /* FTUIColor+Ex.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C5414D908B2004B3759 /* FTUIColor+Ex.h */; };
+		57D66C5714D908B2004B3759 /* FTUIColor+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C5514D908B2004B3759 /* FTUIColor+Ex.m */; };
+		57D66C5A14D909CE004B3759 /* FTUIDevice+Ex.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C5814D909CE004B3759 /* FTUIDevice+Ex.h */; };
+		57D66C5B14D909CE004B3759 /* FTUIDevice+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C5914D909CE004B3759 /* FTUIDevice+Ex.m */; };
+		57D66C5E14D90A30004B3759 /* FTUIFont+Hiragino.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C5C14D90A30004B3759 /* FTUIFont+Hiragino.h */; };
+		57D66C5F14D90A30004B3759 /* FTUIFont+Hiragino.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C5D14D90A30004B3759 /* FTUIFont+Hiragino.m */; };
+		57D66C6214D90AAF004B3759 /* FTUIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C6014D90AAF004B3759 /* FTUIImage+Transform.h */; };
+		57D66C6314D90AAF004B3759 /* FTUIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C6114D90AAF004B3759 /* FTUIImage+Transform.m */; };
+		57D66C6D14D90B6A004B3759 /* FTUIImage+Mask.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C6B14D90B6A004B3759 /* FTUIImage+Mask.h */; };
+		57D66C6E14D90B6A004B3759 /* FTUIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C6C14D90B6A004B3759 /* FTUIImage+Mask.m */; };
+		57D66C7B14D90CC9004B3759 /* FTSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C7314D90CC9004B3759 /* FTSwitchCell.h */; };
+		57D66C7C14D90CC9004B3759 /* FTSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C7414D90CC9004B3759 /* FTSwitchCell.m */; };
+		57D66C7D14D90CC9004B3759 /* FTTableContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C7514D90CC9004B3759 /* FTTableContentView.h */; };
+		57D66C7E14D90CC9004B3759 /* FTTableContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C7614D90CC9004B3759 /* FTTableContentView.m */; };
+		57D66C7F14D90CC9004B3759 /* FTTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C7714D90CC9004B3759 /* FTTableViewCell.h */; };
+		57D66C8014D90CC9004B3759 /* FTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C7814D90CC9004B3759 /* FTTableViewCell.m */; };
+		57D66C8114D90CC9004B3759 /* FTTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C7914D90CC9004B3759 /* FTTextFieldCell.h */; };
+		57D66C8214D90CC9004B3759 /* FTTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D66C7A14D90CC9004B3759 /* FTTextFieldCell.m */; };
+		57E5D7BA14FF08CC00FD044D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E5D7B914FF08CC00FD044D /* UIKit.framework */; };
+		57E5D7BB14FF08CC00FD044D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D66C3A14D906EB004B3759 /* Foundation.framework */; };
+		57E5D7BD14FF08CC00FD044D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E5D7BC14FF08CC00FD044D /* CoreGraphics.framework */; };
+		57E5D7C314FF08CC00FD044D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57E5D7C114FF08CC00FD044D /* InfoPlist.strings */; };
+		57E5D7C514FF08CC00FD044D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E5D7C414FF08CC00FD044D /* main.m */; };
+		57E5D7C914FF08CC00FD044D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E5D7C814FF08CC00FD044D /* AppDelegate.m */; };
+		57E5D7CF14FF090300FD044D /* TestDialogViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E5D7CE14FF090300FD044D /* TestDialogViewViewController.m */; };
+		57E5D7D214FF097E00FD044D /* TestDialogViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */; };
+		57E5D7D514FF0A4200FD044D /* libFTUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D66C3714D906EB004B3759 /* libFTUIKit.a */; };
+		BE4626D115298C0200D74125 /* FTUIImage+BlockDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4626CF15298C0200D74125 /* FTUIImage+BlockDraw.h */; };
+		BE4626D215298C0200D74125 /* FTUIImage+BlockDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4626D015298C0200D74125 /* FTUIImage+BlockDraw.m */; };
+		BE5265A31510335B00C4C909 /* TestCalenderViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */; };
+		BE5265A41510335B00C4C909 /* TestCalenderViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */; };
+		BE5265A91510344600C4C909 /* FTCalenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5265A71510344600C4C909 /* FTCalenderView.h */; };
+		BE5265AA1510344600C4C909 /* FTCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A81510344600C4C909 /* FTCalenderView.m */; };
+		BE53245315088963009DDAD1 /* FTNoMenuWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE53245115088963009DDAD1 /* FTNoMenuWebView.h */; };
+		BE53245415088963009DDAD1 /* FTNoMenuWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53245215088963009DDAD1 /* FTNoMenuWebView.m */; };
+		BE53245C15088D84009DDAD1 /* FTUITableView+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */; };
+		BE53245D15088D84009DDAD1 /* FTUITableView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53245B15088D84009DDAD1 /* FTUITableView+Utilities.m */; };
+		BEA15DDD1509F1B800CDB701 /* FTActivityIndicatorDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */; };
+		BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */; };
+		BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED0AC8115102F0500BFD219 /* MainMenuViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57E5D7D314FF0A3E00FD044D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D66C2E14D906EB004B3759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D66C3614D906EB004B3759;
+			remoteInfo = FTUIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5723621314FF2EEA009EABF7 /* FTBackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBackgroundTaskManager.h; sourceTree = "<group>"; };
+		5723621414FF2EEA009EABF7 /* FTBackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBackgroundTaskManager.m; sourceTree = "<group>"; };
+		5734D62C14FB0DC8007A0025 /* FTNoMenuTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNoMenuTextView.h; sourceTree = "<group>"; };
+		5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoMenuTextView.m; sourceTree = "<group>"; };
+		57CAF9C71535622000D9D0F9 /* FTUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUIKit.h; sourceTree = "<group>"; };
+		57D66C3714D906EB004B3759 /* libFTUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D66C3A14D906EB004B3759 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		57D66C3E14D906EB004B3759 /* FTUIKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUIKit-Prefix.pch"; sourceTree = "<group>"; };
+		57D66C4B14D90796004B3759 /* FTUIKit_Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FTUIKit_Shared.xcconfig; sourceTree = "<group>"; };
+		57D66C4C14D9080E004B3759 /* FTDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDialogView.h; sourceTree = "<group>"; };
+		57D66C4D14D9080E004B3759 /* FTDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDialogView.m; sourceTree = "<group>"; };
+		57D66C5014D9081F004B3759 /* CAAnimationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationFactory.h; sourceTree = "<group>"; };
+		57D66C5114D9081F004B3759 /* CAAnimationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationFactory.m; sourceTree = "<group>"; };
+		57D66C5414D908B2004B3759 /* FTUIColor+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIColor+Ex.h"; sourceTree = "<group>"; };
+		57D66C5514D908B2004B3759 /* FTUIColor+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIColor+Ex.m"; sourceTree = "<group>"; };
+		57D66C5814D909CE004B3759 /* FTUIDevice+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIDevice+Ex.h"; sourceTree = "<group>"; };
+		57D66C5914D909CE004B3759 /* FTUIDevice+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIDevice+Ex.m"; sourceTree = "<group>"; };
+		57D66C5C14D90A30004B3759 /* FTUIFont+Hiragino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIFont+Hiragino.h"; sourceTree = "<group>"; };
+		57D66C5D14D90A30004B3759 /* FTUIFont+Hiragino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIFont+Hiragino.m"; sourceTree = "<group>"; };
+		57D66C6014D90AAF004B3759 /* FTUIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIImage+Transform.h"; sourceTree = "<group>"; };
+		57D66C6114D90AAF004B3759 /* FTUIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIImage+Transform.m"; sourceTree = "<group>"; };
+		57D66C6B14D90B6A004B3759 /* FTUIImage+Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIImage+Mask.h"; sourceTree = "<group>"; };
+		57D66C6C14D90B6A004B3759 /* FTUIImage+Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIImage+Mask.m"; sourceTree = "<group>"; };
+		57D66C7314D90CC9004B3759 /* FTSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSwitchCell.h; sourceTree = "<group>"; };
+		57D66C7414D90CC9004B3759 /* FTSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSwitchCell.m; sourceTree = "<group>"; };
+		57D66C7514D90CC9004B3759 /* FTTableContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableContentView.h; sourceTree = "<group>"; };
+		57D66C7614D90CC9004B3759 /* FTTableContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableContentView.m; sourceTree = "<group>"; };
+		57D66C7714D90CC9004B3759 /* FTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewCell.h; sourceTree = "<group>"; };
+		57D66C7814D90CC9004B3759 /* FTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewCell.m; sourceTree = "<group>"; };
+		57D66C7914D90CC9004B3759 /* FTTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTextFieldCell.h; sourceTree = "<group>"; };
+		57D66C7A14D90CC9004B3759 /* FTTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTextFieldCell.m; sourceTree = "<group>"; };
+		57E5D7B714FF08CC00FD044D /* FTUIKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTUIKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E5D7B914FF08CC00FD044D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57E5D7BC14FF08CC00FD044D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57E5D7C014FF08CC00FD044D /* FTUIKitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTUIKitTest-Info.plist"; sourceTree = "<group>"; };
+		57E5D7C214FF08CC00FD044D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57E5D7C414FF08CC00FD044D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57E5D7C614FF08CC00FD044D /* FTUIKitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTUIKitTest-Prefix.pch"; sourceTree = "<group>"; };
+		57E5D7C714FF08CC00FD044D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57E5D7C814FF08CC00FD044D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57E5D7CD14FF090300FD044D /* TestDialogViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDialogViewViewController.h; sourceTree = "<group>"; };
+		57E5D7CE14FF090300FD044D /* TestDialogViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDialogViewViewController.m; sourceTree = "<group>"; };
+		57E5D7D014FF091700FD044D /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestDialogViewViewController.xib; sourceTree = "<group>"; };
+		BE4626CF15298C0200D74125 /* FTUIImage+BlockDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIImage+BlockDraw.h"; sourceTree = "<group>"; };
+		BE4626D015298C0200D74125 /* FTUIImage+BlockDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIImage+BlockDraw.m"; sourceTree = "<group>"; };
+		BE5265A01510335B00C4C909 /* TestCalenderViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCalenderViewViewController.h; sourceTree = "<group>"; };
+		BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCalenderViewViewController.m; sourceTree = "<group>"; };
+		BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCalenderViewViewController.xib; sourceTree = "<group>"; };
+		BE5265A71510344600C4C909 /* FTCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalenderView.h; sourceTree = "<group>"; };
+		BE5265A81510344600C4C909 /* FTCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCalenderView.m; sourceTree = "<group>"; };
+		BE53245115088963009DDAD1 /* FTNoMenuWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNoMenuWebView.h; sourceTree = "<group>"; };
+		BE53245215088963009DDAD1 /* FTNoMenuWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoMenuWebView.m; sourceTree = "<group>"; };
+		BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUITableView+Utilities.h"; sourceTree = "<group>"; };
+		BE53245B15088D84009DDAD1 /* FTUITableView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUITableView+Utilities.m"; sourceTree = "<group>"; };
+		BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTActivityIndicatorDialogView.h; sourceTree = "<group>"; };
+		BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTActivityIndicatorDialogView.m; sourceTree = "<group>"; };
+		BED0AC8015102F0500BFD219 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D66C3414D906EB004B3759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D66C3B14D906EB004B3759 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E5D7B414FF08CC00FD044D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E5D7D514FF0A4200FD044D /* libFTUIKit.a in Frameworks */,
+				57E5D7BA14FF08CC00FD044D /* UIKit.framework in Frameworks */,
+				57E5D7BB14FF08CC00FD044D /* Foundation.framework in Frameworks */,
+				57E5D7BD14FF08CC00FD044D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57D66C2C14D906EB004B3759 = {
+			isa = PBXGroup;
+			children = (
+				57D66C4B14D90796004B3759 /* FTUIKit_Shared.xcconfig */,
+				57D66C3C14D906EB004B3759 /* FTUIKit */,
+				57E5D7BE14FF08CC00FD044D /* FTUIKitTest */,
+				57D66C3914D906EB004B3759 /* Frameworks */,
+				57D66C3814D906EB004B3759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57D66C3814D906EB004B3759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C3714D906EB004B3759 /* libFTUIKit.a */,
+				57E5D7B714FF08CC00FD044D /* FTUIKitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57D66C3914D906EB004B3759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C3A14D906EB004B3759 /* Foundation.framework */,
+				57E5D7B914FF08CC00FD044D /* UIKit.framework */,
+				57E5D7BC14FF08CC00FD044D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57D66C3C14D906EB004B3759 /* FTUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BE5265A61510343000C4C909 /* Calender */,
+				57D66C7014D90BBD004B3759 /* Graphic */,
+				57D66C7114D90BDA004B3759 /* Animtation */,
+				57D66C8314D90D52004B3759 /* Table */,
+				BEA15DD91509F16500CDB701 /* DialogView */,
+				57D66C7214D90BEB004B3759 /* Other */,
+				57D66C3D14D906EB004B3759 /* Supporting Files */,
+			);
+			path = FTUIKit;
+			sourceTree = "<group>";
+		};
+		57D66C3D14D906EB004B3759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57CAF9C71535622000D9D0F9 /* FTUIKit.h */,
+				57D66C3E14D906EB004B3759 /* FTUIKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57D66C7014D90BBD004B3759 /* Graphic */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C5414D908B2004B3759 /* FTUIColor+Ex.h */,
+				57D66C5514D908B2004B3759 /* FTUIColor+Ex.m */,
+				57D66C5C14D90A30004B3759 /* FTUIFont+Hiragino.h */,
+				57D66C5D14D90A30004B3759 /* FTUIFont+Hiragino.m */,
+				57D66C6014D90AAF004B3759 /* FTUIImage+Transform.h */,
+				57D66C6114D90AAF004B3759 /* FTUIImage+Transform.m */,
+				57D66C6B14D90B6A004B3759 /* FTUIImage+Mask.h */,
+				57D66C6C14D90B6A004B3759 /* FTUIImage+Mask.m */,
+				BE4626CF15298C0200D74125 /* FTUIImage+BlockDraw.h */,
+				BE4626D015298C0200D74125 /* FTUIImage+BlockDraw.m */,
+			);
+			name = Graphic;
+			sourceTree = "<group>";
+		};
+		57D66C7114D90BDA004B3759 /* Animtation */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C5014D9081F004B3759 /* CAAnimationFactory.h */,
+				57D66C5114D9081F004B3759 /* CAAnimationFactory.m */,
+			);
+			name = Animtation;
+			sourceTree = "<group>";
+		};
+		57D66C7214D90BEB004B3759 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5723621314FF2EEA009EABF7 /* FTBackgroundTaskManager.h */,
+				5723621414FF2EEA009EABF7 /* FTBackgroundTaskManager.m */,
+				57D66C5814D909CE004B3759 /* FTUIDevice+Ex.h */,
+				57D66C5914D909CE004B3759 /* FTUIDevice+Ex.m */,
+				5734D62C14FB0DC8007A0025 /* FTNoMenuTextView.h */,
+				5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */,
+				BE53245115088963009DDAD1 /* FTNoMenuWebView.h */,
+				BE53245215088963009DDAD1 /* FTNoMenuWebView.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		57D66C8314D90D52004B3759 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C7314D90CC9004B3759 /* FTSwitchCell.h */,
+				57D66C7414D90CC9004B3759 /* FTSwitchCell.m */,
+				57D66C7514D90CC9004B3759 /* FTTableContentView.h */,
+				57D66C7614D90CC9004B3759 /* FTTableContentView.m */,
+				57D66C7714D90CC9004B3759 /* FTTableViewCell.h */,
+				57D66C7814D90CC9004B3759 /* FTTableViewCell.m */,
+				57D66C7914D90CC9004B3759 /* FTTextFieldCell.h */,
+				57D66C7A14D90CC9004B3759 /* FTTextFieldCell.m */,
+				BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */,
+				BE53245B15088D84009DDAD1 /* FTUITableView+Utilities.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		57E5D7BE14FF08CC00FD044D /* FTUIKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				57E5D7D014FF091700FD044D /* Config.xcconfig */,
+				57E5D7C714FF08CC00FD044D /* AppDelegate.h */,
+				57E5D7C814FF08CC00FD044D /* AppDelegate.m */,
+				BED0AC8015102F0500BFD219 /* MainMenuViewController.h */,
+				BED0AC8115102F0500BFD219 /* MainMenuViewController.m */,
+				57E5D7CD14FF090300FD044D /* TestDialogViewViewController.h */,
+				57E5D7CE14FF090300FD044D /* TestDialogViewViewController.m */,
+				57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */,
+				BE5265A01510335B00C4C909 /* TestCalenderViewViewController.h */,
+				BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */,
+				BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */,
+				57E5D7BF14FF08CC00FD044D /* Supporting Files */,
+			);
+			path = FTUIKitTest;
+			sourceTree = "<group>";
+		};
+		57E5D7BF14FF08CC00FD044D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57E5D7C014FF08CC00FD044D /* FTUIKitTest-Info.plist */,
+				57E5D7C114FF08CC00FD044D /* InfoPlist.strings */,
+				57E5D7C414FF08CC00FD044D /* main.m */,
+				57E5D7C614FF08CC00FD044D /* FTUIKitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE5265A61510343000C4C909 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				BE5265A71510344600C4C909 /* FTCalenderView.h */,
+				BE5265A81510344600C4C909 /* FTCalenderView.m */,
+			);
+			name = Calender;
+			sourceTree = "<group>";
+		};
+		BEA15DD91509F16500CDB701 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				57D66C4C14D9080E004B3759 /* FTDialogView.h */,
+				57D66C4D14D9080E004B3759 /* FTDialogView.m */,
+				BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */,
+				BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */,
+			);
+			name = DialogView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57D66C3514D906EB004B3759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D66C4E14D9080E004B3759 /* FTDialogView.h in Headers */,
+				57D66C5214D9081F004B3759 /* CAAnimationFactory.h in Headers */,
+				57D66C5614D908B2004B3759 /* FTUIColor+Ex.h in Headers */,
+				57D66C5A14D909CE004B3759 /* FTUIDevice+Ex.h in Headers */,
+				57D66C5E14D90A30004B3759 /* FTUIFont+Hiragino.h in Headers */,
+				57D66C6214D90AAF004B3759 /* FTUIImage+Transform.h in Headers */,
+				57D66C6D14D90B6A004B3759 /* FTUIImage+Mask.h in Headers */,
+				57D66C7B14D90CC9004B3759 /* FTSwitchCell.h in Headers */,
+				57D66C7D14D90CC9004B3759 /* FTTableContentView.h in Headers */,
+				57D66C7F14D90CC9004B3759 /* FTTableViewCell.h in Headers */,
+				57D66C8114D90CC9004B3759 /* FTTextFieldCell.h in Headers */,
+				5734D62E14FB0DC8007A0025 /* FTNoMenuTextView.h in Headers */,
+				5723621514FF2EEA009EABF7 /* FTBackgroundTaskManager.h in Headers */,
+				BE53245315088963009DDAD1 /* FTNoMenuWebView.h in Headers */,
+				BE53245C15088D84009DDAD1 /* FTUITableView+Utilities.h in Headers */,
+				BEA15DDD1509F1B800CDB701 /* FTActivityIndicatorDialogView.h in Headers */,
+				BE5265A91510344600C4C909 /* FTCalenderView.h in Headers */,
+				BE4626D115298C0200D74125 /* FTUIImage+BlockDraw.h in Headers */,
+				57CAF9C81535622200D9D0F9 /* FTUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57D66C3614D906EB004B3759 /* FTUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D66C4414D906EB004B3759 /* Build configuration list for PBXNativeTarget "FTUIKit" */;
+			buildPhases = (
+				57D66C3314D906EB004B3759 /* Sources */,
+				57D66C3414D906EB004B3759 /* Frameworks */,
+				57D66C3514D906EB004B3759 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTUIKit;
+			productName = FTUIKit;
+			productReference = 57D66C3714D906EB004B3759 /* libFTUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		57E5D7B614FF08CC00FD044D /* FTUIKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57E5D7CA14FF08CC00FD044D /* Build configuration list for PBXNativeTarget "FTUIKitTest" */;
+			buildPhases = (
+				57E5D7B314FF08CC00FD044D /* Sources */,
+				57E5D7B414FF08CC00FD044D /* Frameworks */,
+				57E5D7B514FF08CC00FD044D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57E5D7D414FF0A3E00FD044D /* PBXTargetDependency */,
+			);
+			name = FTUIKitTest;
+			productName = FTUIKitTest;
+			productReference = 57E5D7B714FF08CC00FD044D /* FTUIKitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D66C2E14D906EB004B3759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "feedtailor inc";
+			};
+			buildConfigurationList = 57D66C3114D906EB004B3759 /* Build configuration list for PBXProject "FTUIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 57D66C2C14D906EB004B3759;
+			productRefGroup = 57D66C3814D906EB004B3759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D66C3614D906EB004B3759 /* FTUIKit */,
+				57E5D7B614FF08CC00FD044D /* FTUIKitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57E5D7B514FF08CC00FD044D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E5D7C314FF08CC00FD044D /* InfoPlist.strings in Resources */,
+				57E5D7D214FF097E00FD044D /* TestDialogViewViewController.xib in Resources */,
+				BE5265A41510335B00C4C909 /* TestCalenderViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D66C3314D906EB004B3759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D66C4F14D9080E004B3759 /* FTDialogView.m in Sources */,
+				57D66C5314D9081F004B3759 /* CAAnimationFactory.m in Sources */,
+				57D66C5714D908B2004B3759 /* FTUIColor+Ex.m in Sources */,
+				57D66C5B14D909CE004B3759 /* FTUIDevice+Ex.m in Sources */,
+				57D66C5F14D90A30004B3759 /* FTUIFont+Hiragino.m in Sources */,
+				57D66C6314D90AAF004B3759 /* FTUIImage+Transform.m in Sources */,
+				57D66C6E14D90B6A004B3759 /* FTUIImage+Mask.m in Sources */,
+				57D66C7C14D90CC9004B3759 /* FTSwitchCell.m in Sources */,
+				57D66C7E14D90CC9004B3759 /* FTTableContentView.m in Sources */,
+				57D66C8014D90CC9004B3759 /* FTTableViewCell.m in Sources */,
+				57D66C8214D90CC9004B3759 /* FTTextFieldCell.m in Sources */,
+				5734D62F14FB0DC8007A0025 /* FTNoMenuTextView.m in Sources */,
+				5723621614FF2EEA009EABF7 /* FTBackgroundTaskManager.m in Sources */,
+				BE53245415088963009DDAD1 /* FTNoMenuWebView.m in Sources */,
+				BE53245D15088D84009DDAD1 /* FTUITableView+Utilities.m in Sources */,
+				BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */,
+				BE5265AA1510344600C4C909 /* FTCalenderView.m in Sources */,
+				BE4626D215298C0200D74125 /* FTUIImage+BlockDraw.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E5D7B314FF08CC00FD044D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E5D7C514FF08CC00FD044D /* main.m in Sources */,
+				57E5D7C914FF08CC00FD044D /* AppDelegate.m in Sources */,
+				57E5D7CF14FF090300FD044D /* TestDialogViewViewController.m in Sources */,
+				BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */,
+				BE5265A31510335B00C4C909 /* TestCalenderViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57E5D7D414FF0A3E00FD044D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D66C3614D906EB004B3759 /* FTUIKit */;
+			targetProxy = 57E5D7D314FF0A3E00FD044D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57E5D7C114FF08CC00FD044D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57E5D7C214FF08CC00FD044D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57D66C4214D906EB004B3759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57D66C4314D906EB004B3759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57D66C4514D906EB004B3759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FTUIKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTUIKit/FTUIKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		57D66C4614D906EB004B3759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FTUIKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTUIKit/FTUIKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		57E5D7CB14FF08CC00FD044D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E5D7D014FF091700FD044D /* Config.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTUIKitTest/FTUIKitTest-Prefix.pch";
+				INFOPLIST_FILE = "FTUIKitTest/FTUIKitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		57E5D7CC14FF08CC00FD044D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E5D7D014FF091700FD044D /* Config.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTUIKitTest/FTUIKitTest-Prefix.pch";
+				INFOPLIST_FILE = "FTUIKitTest/FTUIKitTest-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D66C3114D906EB004B3759 /* Build configuration list for PBXProject "FTUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D66C4214D906EB004B3759 /* Debug */,
+				57D66C4314D906EB004B3759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D66C4414D906EB004B3759 /* Build configuration list for PBXNativeTarget "FTUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D66C4514D906EB004B3759 /* Debug */,
+				57D66C4614D906EB004B3759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57E5D7CA14FF08CC00FD044D /* Build configuration list for PBXNativeTarget "FTUIKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E5D7CB14FF08CC00FD044D /* Debug */,
+				57E5D7CC14FF08CC00FD044D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57D66C2E14D906EB004B3759 /* Project object */;
+}

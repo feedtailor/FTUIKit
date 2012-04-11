@@ -1,0 +1,5 @@
+//
+//  Copyright 2010 feedtailor Inc. All rights reserved.
+//
+
+OTHER_LDFLAGS_FTUIKIT = -ObjC -all_load -framework QuartzCore

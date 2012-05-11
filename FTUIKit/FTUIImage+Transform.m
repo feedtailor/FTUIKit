@@ -108,6 +108,11 @@
 		scale2D.height = 1.0;
 	}
 	
+	angle = fmodf(angle, M_PI * 2);
+	if (angle < 0) {
+		angle += M_PI * 2;
+	}
+	
 	CGRect bounds = CGRectMake(0, 0, width * fabsf(scale2D.width), height * fabsf(scale2D.height));
 	
 	CGPoint p1 = CGPointMake(bounds.size.width * cosf(angle) - bounds.size.height * sinf(angle), bounds.size.width * sinf(angle) + bounds.size.height * cosf(angle));
@@ -165,7 +170,7 @@
 	
 	//	NSLog(@"(%f,%f) %f, %f => %@, %f", width, height, resolution, angle, NSStringFromCGSize(bounds.size), scaleRatio);
 	
-	UIGraphicsBeginImageContext(bounds.size);
+	UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
 	// 負のスケールは鏡像なので先に平行移動
@@ -234,7 +239,7 @@
 		bounds.size.width = round(bounds.size.width);
 		bounds.size.height = round(bounds.size.height);
 		
-		UIGraphicsBeginImageContext(bounds.size);
+		UIGraphicsBeginImageContextWithOptions(bounds.size, NO, 0);
 		CGContextRef context = UIGraphicsGetCurrentContext();
 		
 		CGRect rect = cropRect;
@@ -293,7 +298,7 @@
 	newSize.width = round(newSize.width);
 	newSize.height = round(newSize.height);
 	
-	UIGraphicsBeginImageContext(newSize);
+	UIGraphicsBeginImageContextWithOptions(newSize, NO, 0);
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
 	CGContextScaleCTM(context, 1, -1);

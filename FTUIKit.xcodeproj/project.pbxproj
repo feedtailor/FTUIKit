@@ -54,9 +54,17 @@
 		BE53245415088963009DDAD1 /* FTNoMenuWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53245215088963009DDAD1 /* FTNoMenuWebView.m */; };
 		BE53245C15088D84009DDAD1 /* FTUITableView+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */; };
 		BE53245D15088D84009DDAD1 /* FTUITableView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53245B15088D84009DDAD1 /* FTUITableView+Utilities.m */; };
+		BE9F0ACE1548E38700CC7AD9 /* FTUIToolbar+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9F0ACC1548E38700CC7AD9 /* FTUIToolbar+Utilities.h */; };
+		BE9F0ACF1548E38700CC7AD9 /* FTUIToolbar+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */; };
 		BEA15DDD1509F1B800CDB701 /* FTActivityIndicatorDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */; };
 		BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */; };
 		BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED0AC8115102F0500BFD219 /* MainMenuViewController.m */; };
+		BEF9FE88153E86E000C30B99 /* FTUIAlertView+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */; };
+		BEF9FE89153E86E000C30B99 /* FTUIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */; };
+		BEF9FEB4153E9CB700C30B99 /* FTUIActionSheet+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */; };
+		BEF9FEB5153E9CB700C30B99 /* FTUIActionSheet+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */; };
+		BEF9FEB9153E9E7100C30B99 /* FTUIVew+UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FEB7153E9E7100C30B99 /* FTUIVew+UserInfo.h */; };
+		BEF9FEBA153E9E7100C30B99 /* FTUIVew+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FEB8153E9E7100C30B99 /* FTUIVew+UserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,10 +133,18 @@
 		BE53245215088963009DDAD1 /* FTNoMenuWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoMenuWebView.m; sourceTree = "<group>"; };
 		BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUITableView+Utilities.h"; sourceTree = "<group>"; };
 		BE53245B15088D84009DDAD1 /* FTUITableView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUITableView+Utilities.m"; sourceTree = "<group>"; };
+		BE9F0ACC1548E38700CC7AD9 /* FTUIToolbar+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIToolbar+Utilities.h"; sourceTree = "<group>"; };
+		BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIToolbar+Utilities.m"; sourceTree = "<group>"; };
 		BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTActivityIndicatorDialogView.h; sourceTree = "<group>"; };
 		BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTActivityIndicatorDialogView.m; sourceTree = "<group>"; };
 		BED0AC8015102F0500BFD219 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIAlertView+Block.h"; sourceTree = "<group>"; };
+		BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIAlertView+Block.m"; sourceTree = "<group>"; };
+		BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIActionSheet+Block.h"; sourceTree = "<group>"; };
+		BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIActionSheet+Block.m"; sourceTree = "<group>"; };
+		BEF9FEB7153E9E7100C30B99 /* FTUIVew+UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIVew+UserInfo.h"; sourceTree = "<group>"; };
+		BEF9FEB8153E9E7100C30B99 /* FTUIVew+UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIVew+UserInfo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +260,14 @@
 				5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */,
 				BE53245115088963009DDAD1 /* FTNoMenuWebView.h */,
 				BE53245215088963009DDAD1 /* FTNoMenuWebView.m */,
+				BEF9FEB7153E9E7100C30B99 /* FTUIVew+UserInfo.h */,
+				BEF9FEB8153E9E7100C30B99 /* FTUIVew+UserInfo.m */,
+				BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */,
+				BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */,
+				BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */,
+				BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */,
+				BE9F0ACC1548E38700CC7AD9 /* FTUIToolbar+Utilities.h */,
+				BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -341,6 +365,10 @@
 				BE5265A91510344600C4C909 /* FTCalenderView.h in Headers */,
 				BE4626D115298C0200D74125 /* FTUIImage+BlockDraw.h in Headers */,
 				57CAF9C81535622200D9D0F9 /* FTUIKit.h in Headers */,
+				BEF9FE88153E86E000C30B99 /* FTUIAlertView+Block.h in Headers */,
+				BEF9FEB4153E9CB700C30B99 /* FTUIActionSheet+Block.h in Headers */,
+				BEF9FEB9153E9E7100C30B99 /* FTUIVew+UserInfo.h in Headers */,
+				BE9F0ACE1548E38700CC7AD9 /* FTUIToolbar+Utilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +473,10 @@
 				BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */,
 				BE5265AA1510344600C4C909 /* FTCalenderView.m in Sources */,
 				BE4626D215298C0200D74125 /* FTUIImage+BlockDraw.m in Sources */,
+				BEF9FE89153E86E000C30B99 /* FTUIAlertView+Block.m in Sources */,
+				BEF9FEB5153E9CB700C30B99 /* FTUIActionSheet+Block.m in Sources */,
+				BEF9FEBA153E9E7100C30B99 /* FTUIVew+UserInfo.m in Sources */,
+				BE9F0ACF1548E38700CC7AD9 /* FTUIToolbar+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,4 +9,7 @@
 + (NSData *)ft_WiFiMACAddressData;
 + (NSString *)ft_WiFiMACAddressString;
 
++(NSString*) ft_platform;
++(NSString*) ft_platformString;
+
 @end

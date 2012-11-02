@@ -59,6 +59,8 @@
 		BEA15DDD1509F1B800CDB701 /* FTActivityIndicatorDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */; };
 		BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */; };
 		BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED0AC8115102F0500BFD219 /* MainMenuViewController.m */; };
+		BEEE5D0F16439D5F005773CC /* FTUIViewController+Rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */; };
+		BEEE5D1016439D5F005773CC /* FTUIViewController+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */; };
 		BEF9FE88153E86E000C30B99 /* FTUIAlertView+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */; };
 		BEF9FE89153E86E000C30B99 /* FTUIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */; };
 		BEF9FEB4153E9CB700C30B99 /* FTUIActionSheet+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */; };
@@ -139,6 +141,8 @@
 		BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTActivityIndicatorDialogView.m; sourceTree = "<group>"; };
 		BED0AC8015102F0500BFD219 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIViewController+Rotation.h"; sourceTree = "<group>"; };
+		BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIViewController+Rotation.m"; sourceTree = "<group>"; };
 		BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIAlertView+Block.h"; sourceTree = "<group>"; };
 		BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIAlertView+Block.m"; sourceTree = "<group>"; };
 		BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIActionSheet+Block.h"; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 				BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */,
 				BE9F0ACC1548E38700CC7AD9 /* FTUIToolbar+Utilities.h */,
 				BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */,
+				BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */,
+				BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				BEF9FEB4153E9CB700C30B99 /* FTUIActionSheet+Block.h in Headers */,
 				BEF9FEB9153E9E7100C30B99 /* FTUIVew+UserInfo.h in Headers */,
 				BE9F0ACE1548E38700CC7AD9 /* FTUIToolbar+Utilities.h in Headers */,
+				BEEE5D0F16439D5F005773CC /* FTUIViewController+Rotation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +484,7 @@
 				BEF9FEB5153E9CB700C30B99 /* FTUIActionSheet+Block.m in Sources */,
 				BEF9FEBA153E9E7100C30B99 /* FTUIVew+UserInfo.m in Sources */,
 				BE9F0ACF1548E38700CC7AD9 /* FTUIToolbar+Utilities.m in Sources */,
+				BEEE5D1016439D5F005773CC /* FTUIViewController+Rotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

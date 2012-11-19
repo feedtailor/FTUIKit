@@ -116,9 +116,14 @@
     if ([platform isEqualToString:@"iPad2,3"])      return @"iPad 2 (CDMA)";
     if ([platform isEqualToString:@"iPad2,4"])      return @"iPad 2";
     if ([platform isEqualToString:@"iPad2,5"])      return @"iPad mini (WiFi)";
+    if ([platform isEqualToString:@"iPad2,6"])      return @"iPad mini (4G)";
+    if ([platform isEqualToString:@"iPad2,7"])      return @"iPad mini (4G)";
     if ([platform isEqualToString:@"iPad3,1"])      return @"iPad-3G (WiFi)";
     if ([platform isEqualToString:@"iPad3,2"])      return @"iPad-3G (4G)";
     if ([platform isEqualToString:@"iPad3,3"])      return @"iPad-3G (4G)";
+    if ([platform isEqualToString:@"iPad3,4"])      return @"iPad-4G (WiFi)";
+    if ([platform isEqualToString:@"iPad3,5"])      return @"iPad-4G (4G)";
+    if ([platform isEqualToString:@"iPad3,6"])      return @"iPad-4G (4G)";
     if ([platform isEqualToString:@"i386"])         return @"Simulator";
     if ([platform isEqualToString:@"x86_64"])       return @"Simulator";
     return platform;

@@ -11,6 +11,8 @@
 		5723621614FF2EEA009EABF7 /* FTBackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5723621414FF2EEA009EABF7 /* FTBackgroundTaskManager.m */; };
 		5734D62E14FB0DC8007A0025 /* FTNoMenuTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5734D62C14FB0DC8007A0025 /* FTNoMenuTextView.h */; };
 		5734D62F14FB0DC8007A0025 /* FTNoMenuTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */; };
+		5793A7A116DDE0430082EB02 /* FTFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 5793A79F16DDE0430082EB02 /* FTFeedback.h */; };
+		5793A7A216DDE0430082EB02 /* FTFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793A7A016DDE0430082EB02 /* FTFeedback.m */; };
 		57CAF9C81535622200D9D0F9 /* FTUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CAF9C71535622000D9D0F9 /* FTUIKit.h */; };
 		57D66C3B14D906EB004B3759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D66C3A14D906EB004B3759 /* Foundation.framework */; };
 		57D66C4E14D9080E004B3759 /* FTDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D66C4C14D9080E004B3759 /* FTDialogView.h */; };
@@ -84,6 +86,8 @@
 		5723621414FF2EEA009EABF7 /* FTBackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBackgroundTaskManager.m; sourceTree = "<group>"; };
 		5734D62C14FB0DC8007A0025 /* FTNoMenuTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNoMenuTextView.h; sourceTree = "<group>"; };
 		5734D62D14FB0DC8007A0025 /* FTNoMenuTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoMenuTextView.m; sourceTree = "<group>"; };
+		5793A79F16DDE0430082EB02 /* FTFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFeedback.h; sourceTree = "<group>"; };
+		5793A7A016DDE0430082EB02 /* FTFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFeedback.m; sourceTree = "<group>"; };
 		57CAF9C71535622000D9D0F9 /* FTUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUIKit.h; sourceTree = "<group>"; };
 		57D66C3714D906EB004B3759 /* libFTUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D66C3A14D906EB004B3759 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -274,6 +278,8 @@
 				BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */,
 				BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */,
 				BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */,
+				5793A79F16DDE0430082EB02 /* FTFeedback.h */,
+				5793A7A016DDE0430082EB02 /* FTFeedback.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				BEF9FEB9153E9E7100C30B99 /* FTUIVew+UserInfo.h in Headers */,
 				BE9F0ACE1548E38700CC7AD9 /* FTUIToolbar+Utilities.h in Headers */,
 				BEEE5D0F16439D5F005773CC /* FTUIViewController+Rotation.h in Headers */,
+				5793A7A116DDE0430082EB02 /* FTFeedback.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +492,7 @@
 				BEF9FEBA153E9E7100C30B99 /* FTUIVew+UserInfo.m in Sources */,
 				BE9F0ACF1548E38700CC7AD9 /* FTUIToolbar+Utilities.m in Sources */,
 				BEEE5D1016439D5F005773CC /* FTUIViewController+Rotation.m in Sources */,
+				5793A7A216DDE0430082EB02 /* FTFeedback.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,6 +3,7 @@
 //
 
 #import "MainMenuViewController.h"
+#import "FTFeedback.h"
 
 @interface MainMenuViewController ()
 
@@ -53,12 +54,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 1;
+	return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return [viewControllerNames count];;
+	return (section == 0) ? [viewControllerNames count] : 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,7 +73,7 @@
 		cell.textLabel.minimumFontSize = [UIFont smallSystemFontSize];
 	}
 
-	cell.textLabel.text = [viewControllerNames objectAtIndex:indexPath.row];
+	cell.textLabel.text = (indexPath.section == 0) ? [viewControllerNames objectAtIndex:indexPath.row] : @"Feedback";
 	
 	return cell;
 }
@@ -83,10 +84,14 @@
 {
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
-	NSString *vcName = [viewControllerNames objectAtIndex:indexPath.row];
-	Class class = NSClassFromString(vcName);
-	UIViewController *vc = [[class alloc] initWithNibName:Nil bundle:nil];
-	[self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.section == 0) {
+        NSString *vcName = [viewControllerNames objectAtIndex:indexPath.row];
+        Class class = NSClassFromString(vcName);
+        UIViewController *vc = [[class alloc] initWithNibName:Nil bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        [FTFeedback presentFeedback:[FTFeedback numberedToReceipantsWithPrefix:@"test" domain:@"example.com"] body:@"test" parentViewController:self];
+    }
 }
 
 @end

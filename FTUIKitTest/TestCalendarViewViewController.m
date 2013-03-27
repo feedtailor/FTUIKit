@@ -2,10 +2,10 @@
 //  Copyright (c) 2012年 feedtailor Inc. All rights reserved.
 //
 
-#import "TestCalenderViewViewController.h"
+#import "TestCalendarViewViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface TestCalenderCell : FTCalenderViewCell
+@interface TestCalendarCell : FTCalendarViewCell
 {
 }
 
@@ -13,7 +13,7 @@
 
 @end
 
-@implementation TestCalenderCell
+@implementation TestCalendarCell
 
 @synthesize label = label_;
 
@@ -62,22 +62,22 @@
 
 #pragma mark -
 
-@interface TestCalenderViewViewController ()
+@interface TestCalendarViewViewController ()
 
 @end
 
-@implementation TestCalenderViewViewController
+@implementation TestCalendarViewViewController
 {
-	__weak FTCalenderView *calenderView_;
+	__weak FTCalendarView *calendarView_;
 }
 
-@synthesize calenderContainerView;
+@synthesize calendarContainerView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	if(self) {
-		self.title = @"Calender";
+		self.title = @"Calendar";
 	}
 	return self;
 }
@@ -97,14 +97,14 @@
 {
 	[super viewDidLoad];
 
-	FTCalenderView *calenderView = [[FTCalenderView alloc] initWithFrame:CGRectZero];
-	[self.calenderContainerView addSubview:calenderView];
-	calenderView_ = calenderView;
+	FTCalendarView *calendarView = [[FTCalendarView alloc] initWithFrame:CGRectZero];
+	[self.calendarContainerView addSubview:calendarView];
+	calendarView_ = calendarView;
 
-	//calenderView_.startWeekday = 2; // 月曜始まり
-	calenderView_.currentDate = [NSDate date];
-	calenderView_.dataSource = self;
-	calenderView_.delegate = self;
+	//calendarView_.startWeekday = 2; // 月曜始まり
+	calendarView_.currentDate = [NSDate date];
+	calendarView_.dataSource = self;
+	calendarView_.delegate = self;
 }
 
 #pragma mark - Layout
@@ -112,24 +112,24 @@
 - (void)viewWillLayoutSubviews
 {
 	[super viewWillLayoutSubviews];
-	calenderView_.frame = self.calenderContainerView.bounds;
+	calendarView_.frame = self.calendarContainerView.bounds;
 }
 
 #pragma mark -
 
-- (void)calenderView:(FTCalenderView *)calenderView didSelectCell:(FTCalenderViewCell *)cell
+- (void)calendarView:(FTCalendarView *)calendarView didSelectCell:(FTCalendarViewCell *)cell
 {
 	NSLog(@"%@", cell.date);
 	cell.selected = !cell.selected;
 }
 
-- (FTCalenderViewCell *)calenderView:(FTCalenderView *)calenderView cellForDate:(NSDate *)date
+- (FTCalendarViewCell *)calendarView:(FTCalendarView *)calendarView cellForDate:(NSDate *)date
 {
 	static NSString *cellIdentifier = @"Cell";
 
-	TestCalenderCell *cell = [calenderView_ dequeueReusableCellWithIdentifier:cellIdentifier];
+	TestCalendarCell *cell = [calendarView_ dequeueReusableCellWithIdentifier:cellIdentifier];
 	if(!cell) {
-		cell = [[TestCalenderCell alloc] initWithIdentifier:cellIdentifier];
+		cell = [[TestCalendarCell alloc] initWithIdentifier:cellIdentifier];
 	}
 	
 	static int color = 0;
@@ -144,10 +144,10 @@
 	});
 
 	cell.label.text = [dateFormatter stringFromDate:date];
-	if([calenderView_ currentMonthContainsDate:date]) {
+	if([calendarView_ currentMonthContainsDate:date]) {
 		cell.label.textColor = [UIColor whiteColor];
 		
-		NSDateComponents *weekDayComponents = [calenderView_.calendar components:NSWeekdayCalendarUnit fromDate:date];
+		NSDateComponents *weekDayComponents = [calendarView_.calendar components:NSWeekdayCalendarUnit fromDate:date];
 		if([weekDayComponents weekday] == 1) {
 			cell.label.backgroundColor = [UIColor colorWithHue:0 saturation:0.8 brightness:0.8 alpha:1];
 		} else if([weekDayComponents weekday] == 7) {
@@ -171,35 +171,35 @@
 
 - (IBAction)today:(id)sender
 {
-	[calenderView_ setCurrentDate:[NSDate date]];
-	[calenderView_ reloadData];
+	[calendarView_ setCurrentDate:[NSDate date]];
+	[calendarView_ reloadData];
 
-	FTCalenderViewCell * cell = [calenderView_ cellForDate:[NSDate date]];
+	FTCalendarViewCell * cell = [calendarView_ cellForDate:[NSDate date]];
 	cell.selected = YES;
 }
 
 - (IBAction)prevMonth:(id)sender
 {
-	[calenderView_ offsetMonth:-1];
-	[calenderView_ reloadData];
+	[calendarView_ offsetMonth:-1];
+	[calendarView_ reloadData];
 }
 
 - (IBAction)nextMonth:(id)sender
 {
-	[calenderView_ offsetMonth:1];
-	[calenderView_ reloadData];
+	[calendarView_ offsetMonth:1];
+	[calendarView_ reloadData];
 }
 
 - (IBAction)prevYear:(id)sender
 {
-	[calenderView_ offsetMonth:-12];
-	[calenderView_ reloadData];
+	[calendarView_ offsetMonth:-12];
+	[calendarView_ reloadData];
 }
 
 - (IBAction)nextYear:(id)sender
 {
-	[calenderView_ offsetMonth:+12];
-	[calenderView_ reloadData];
+	[calendarView_ offsetMonth:+12];
+	[calendarView_ reloadData];
 }
 
 @end

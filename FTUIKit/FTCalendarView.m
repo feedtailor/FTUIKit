@@ -2,7 +2,7 @@
 //  Copyright 2010 feedtailor Inc. All rights reserved.
 //
 
-#import "FTCalenderView.h"
+#import "FTCalendarView.h"
 
 // note
 // iPhoneの標準カレンダーは
@@ -12,16 +12,16 @@
 
 #pragma mark -
 
-@interface FTCalenderViewCell ()
+@interface FTCalendarViewCell ()
 @property (nonatomic, strong) NSDate *date;
-@property (nonatomic, weak) FTCalenderView *calenderView;
+@property (nonatomic, weak) FTCalendarView *calendarView;
 @end
 
-@interface FTCalenderView ()
-- (void)handleCellTap:(FTCalenderViewCell *)cell;
+@interface FTCalendarView ()
+- (void)handleCellTap:(FTCalendarViewCell *)cell;
 @end
 
-@implementation FTCalenderViewCell
+@implementation FTCalendarViewCell
 {
 @private
 	UIView *contentView_;
@@ -29,7 +29,7 @@
 
 @synthesize identifier = identifier_;
 @synthesize contentView = contentView_;
-@synthesize calenderView = calenderView_;
+@synthesize calendarView = calendarView_;
 @synthesize date = date_;
 
 @synthesize selected = selected_;
@@ -78,7 +78,7 @@
     UITouch *theTouch = [touches anyObject];
 	CGPoint point = [theTouch locationInView:self.superview];
 	if(CGRectContainsPoint(self.frame, point)) {
-		[calenderView_ handleCellTap:self];
+		[calendarView_ handleCellTap:self];
 	}
 
 	self.highlighted = NO;
@@ -93,7 +93,7 @@
 
 #pragma mark -
 
-@implementation FTCalenderView
+@implementation FTCalendarView
 {
 @private
 	NSCalendar *gregorianCalendar_;
@@ -189,11 +189,11 @@
 	return cell;
 }
 
-- (FTCalenderViewCell *)cellForDate:(NSDate *)date
+- (FTCalendarViewCell *)cellForDate:(NSDate *)date
 {
 	NSDateComponents *components = [gregorianCalendar_ components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
 														 fromDate:date];
-	for(FTCalenderViewCell *cell in self.subviews) {
+	for(FTCalendarViewCell *cell in self.subviews) {
 		NSDateComponents *cellComponents = [gregorianCalendar_ components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
 																 fromDate:cell.date];
 		if([components year] == [cellComponents year] &&
@@ -206,10 +206,10 @@
 	return nil;
 }
 
-- (FTCalenderViewCell *)cellFromDelegateForDate:(NSDate *)date
+- (FTCalendarViewCell *)cellFromDelegateForDate:(NSDate *)date
 {
 	if(dataSource_) {
-		return [dataSource_ calenderView:self cellForDate:date];
+		return [dataSource_ calendarView:self cellForDate:date];
 	}
 
 	return nil;
@@ -255,7 +255,7 @@
 {
 	[super layoutSubviews];
 
-	for(FTCalenderViewCell *cell in self.subviews) {
+	for(FTCalendarViewCell *cell in self.subviews) {
 		[cell removeFromSuperview];
 		NSMutableSet *set = [cellQueue_ objectForKey:cell.identifier];
 		if(!set) {
@@ -274,12 +274,12 @@
 		for(int x = 0; x < 7; x++) {			
 			CGRect cellFrame = [self frameForCellAtColumn:x row:y];
 
-			FTCalenderViewCell *cell = [self cellFromDelegateForDate:currentDate];
+			FTCalendarViewCell *cell = [self cellFromDelegateForDate:currentDate];
 			NSParameterAssert(cell);
 
 			cell.frame = cellFrame;
 			cell.date = currentDate;
-			cell.calenderView = self;
+			cell.calendarView = self;
 
 			[self addSubview:cell];
 
@@ -292,16 +292,16 @@
 	}
 }
 
-- (void)handleCellTap:(FTCalenderViewCell *)cell
+- (void)handleCellTap:(FTCalendarViewCell *)cell
 {
     if (self.selectionType == FTCalendarViewSelectionTypeSingle) {
-        for(FTCalenderViewCell *cell in self.subviews) {
+        for(FTCalendarViewCell *cell in self.subviews) {
             cell.selected = NO;
         }
     }
 
-	if([delegate_ respondsToSelector:@selector(calenderView:didSelectCell:)]) {
-		[delegate_ calenderView:self didSelectCell:cell];
+	if([delegate_ respondsToSelector:@selector(calendarView:didSelectCell:)]) {
+		[delegate_ calendarView:self didSelectCell:cell];
 	}
 }
 

@@ -17,7 +17,7 @@
 {
 	viewControllerNames = [NSArray arrayWithObjects:
 						   @"TestDialogViewViewController",
-						   @"TestCalenderViewViewController",
+						   @"TestCalendarViewViewController",
 						   nil];
 }
 

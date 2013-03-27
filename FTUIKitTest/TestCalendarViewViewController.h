@@ -3,11 +3,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FTCalenderView.h"
+#import "FTCalendarView.h"
 
-@interface TestCalenderViewViewController : UIViewController <FTCalenderViewDataSource, FTCalenderViewDelegate>
+@interface TestCalendarViewViewController : UIViewController <FTCalendarViewDataSource, FTCalendarViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *calenderContainerView;
+@property (weak, nonatomic) IBOutlet UIView *calendarContainerView;
 
 - (IBAction)today:(id)sender;
 - (IBAction)prevMonth:(id)sender;

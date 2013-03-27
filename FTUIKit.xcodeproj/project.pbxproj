@@ -46,10 +46,10 @@
 		57E5D7D514FF0A4200FD044D /* libFTUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D66C3714D906EB004B3759 /* libFTUIKit.a */; };
 		BE4626D115298C0200D74125 /* FTUIImage+BlockDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4626CF15298C0200D74125 /* FTUIImage+BlockDraw.h */; };
 		BE4626D215298C0200D74125 /* FTUIImage+BlockDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4626D015298C0200D74125 /* FTUIImage+BlockDraw.m */; };
-		BE5265A31510335B00C4C909 /* TestCalenderViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */; };
-		BE5265A41510335B00C4C909 /* TestCalenderViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */; };
-		BE5265A91510344600C4C909 /* FTCalenderView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5265A71510344600C4C909 /* FTCalenderView.h */; };
-		BE5265AA1510344600C4C909 /* FTCalenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A81510344600C4C909 /* FTCalenderView.m */; };
+		BE5265A31510335B00C4C909 /* TestCalendarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A11510335B00C4C909 /* TestCalendarViewViewController.m */; };
+		BE5265A41510335B00C4C909 /* TestCalendarViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5265A21510335B00C4C909 /* TestCalendarViewViewController.xib */; };
+		BE5265A91510344600C4C909 /* FTCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5265A71510344600C4C909 /* FTCalendarView.h */; };
+		BE5265AA1510344600C4C909 /* FTCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A81510344600C4C909 /* FTCalendarView.m */; };
 		BE53245315088963009DDAD1 /* FTNoMenuWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE53245115088963009DDAD1 /* FTNoMenuWebView.h */; };
 		BE53245415088963009DDAD1 /* FTNoMenuWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE53245215088963009DDAD1 /* FTNoMenuWebView.m */; };
 		BE53245C15088D84009DDAD1 /* FTUITableView+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */; };
@@ -124,11 +124,11 @@
 		57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestDialogViewViewController.xib; sourceTree = "<group>"; };
 		BE4626CF15298C0200D74125 /* FTUIImage+BlockDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIImage+BlockDraw.h"; sourceTree = "<group>"; };
 		BE4626D015298C0200D74125 /* FTUIImage+BlockDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIImage+BlockDraw.m"; sourceTree = "<group>"; };
-		BE5265A01510335B00C4C909 /* TestCalenderViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCalenderViewViewController.h; sourceTree = "<group>"; };
-		BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCalenderViewViewController.m; sourceTree = "<group>"; };
-		BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCalenderViewViewController.xib; sourceTree = "<group>"; };
-		BE5265A71510344600C4C909 /* FTCalenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalenderView.h; sourceTree = "<group>"; };
-		BE5265A81510344600C4C909 /* FTCalenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCalenderView.m; sourceTree = "<group>"; };
+		BE5265A01510335B00C4C909 /* TestCalendarViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCalendarViewViewController.h; sourceTree = "<group>"; };
+		BE5265A11510335B00C4C909 /* TestCalendarViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCalendarViewViewController.m; sourceTree = "<group>"; };
+		BE5265A21510335B00C4C909 /* TestCalendarViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCalendarViewViewController.xib; sourceTree = "<group>"; };
+		BE5265A71510344600C4C909 /* FTCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalendarView.h; sourceTree = "<group>"; };
+		BE5265A81510344600C4C909 /* FTCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCalendarView.m; sourceTree = "<group>"; };
 		BE53245115088963009DDAD1 /* FTNoMenuWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNoMenuWebView.h; sourceTree = "<group>"; };
 		BE53245215088963009DDAD1 /* FTNoMenuWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNoMenuWebView.m; sourceTree = "<group>"; };
 		BE53245A15088D84009DDAD1 /* FTUITableView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUITableView+Utilities.h"; sourceTree = "<group>"; };
@@ -300,9 +300,9 @@
 				57E5D7CD14FF090300FD044D /* TestDialogViewViewController.h */,
 				57E5D7CE14FF090300FD044D /* TestDialogViewViewController.m */,
 				57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */,
-				BE5265A01510335B00C4C909 /* TestCalenderViewViewController.h */,
-				BE5265A11510335B00C4C909 /* TestCalenderViewViewController.m */,
-				BE5265A21510335B00C4C909 /* TestCalenderViewViewController.xib */,
+				BE5265A01510335B00C4C909 /* TestCalendarViewViewController.h */,
+				BE5265A11510335B00C4C909 /* TestCalendarViewViewController.m */,
+				BE5265A21510335B00C4C909 /* TestCalendarViewViewController.xib */,
 				57E5D7BF14FF08CC00FD044D /* Supporting Files */,
 			);
 			path = FTUIKitTest;
@@ -322,8 +322,8 @@
 		BE5265A61510343000C4C909 /* Calender */ = {
 			isa = PBXGroup;
 			children = (
-				BE5265A71510344600C4C909 /* FTCalenderView.h */,
-				BE5265A81510344600C4C909 /* FTCalenderView.m */,
+				BE5265A71510344600C4C909 /* FTCalendarView.h */,
+				BE5265A81510344600C4C909 /* FTCalendarView.m */,
 			);
 			name = Calender;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 				BE53245315088963009DDAD1 /* FTNoMenuWebView.h in Headers */,
 				BE53245C15088D84009DDAD1 /* FTUITableView+Utilities.h in Headers */,
 				BEA15DDD1509F1B800CDB701 /* FTActivityIndicatorDialogView.h in Headers */,
-				BE5265A91510344600C4C909 /* FTCalenderView.h in Headers */,
+				BE5265A91510344600C4C909 /* FTCalendarView.h in Headers */,
 				BE4626D115298C0200D74125 /* FTUIImage+BlockDraw.h in Headers */,
 				57CAF9C81535622200D9D0F9 /* FTUIKit.h in Headers */,
 				BEF9FE88153E86E000C30B99 /* FTUIAlertView+Block.h in Headers */,
@@ -444,7 +444,7 @@
 			files = (
 				57E5D7C314FF08CC00FD044D /* InfoPlist.strings in Resources */,
 				57E5D7D214FF097E00FD044D /* TestDialogViewViewController.xib in Resources */,
-				BE5265A41510335B00C4C909 /* TestCalenderViewViewController.xib in Resources */,
+				BE5265A41510335B00C4C909 /* TestCalendarViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +471,7 @@
 				BE53245415088963009DDAD1 /* FTNoMenuWebView.m in Sources */,
 				BE53245D15088D84009DDAD1 /* FTUITableView+Utilities.m in Sources */,
 				BEA15DDE1509F1B800CDB701 /* FTActivityIndicatorDialogView.m in Sources */,
-				BE5265AA1510344600C4C909 /* FTCalenderView.m in Sources */,
+				BE5265AA1510344600C4C909 /* FTCalendarView.m in Sources */,
 				BE4626D215298C0200D74125 /* FTUIImage+BlockDraw.m in Sources */,
 				BEF9FE89153E86E000C30B99 /* FTUIAlertView+Block.m in Sources */,
 				BEF9FEB5153E9CB700C30B99 /* FTUIActionSheet+Block.m in Sources */,
@@ -488,7 +488,7 @@
 				57E5D7C914FF08CC00FD044D /* AppDelegate.m in Sources */,
 				57E5D7CF14FF090300FD044D /* TestDialogViewViewController.m in Sources */,
 				BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */,
-				BE5265A31510335B00C4C909 /* TestCalenderViewViewController.m in Sources */,
+				BE5265A31510335B00C4C909 /* TestCalendarViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

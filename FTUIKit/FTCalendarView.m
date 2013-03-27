@@ -64,6 +64,12 @@
 	selected_ = selected;
 }
 
+- (void)prepareForReuse
+{
+    self.highlighted = NO;
+    self.selected = NO;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	self.highlighted = YES;
@@ -186,6 +192,7 @@
 		[set removeObject:cell];
 	}
 
+    [cell prepareForReuse];
 	return cell;
 }
 

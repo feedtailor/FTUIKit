@@ -163,8 +163,6 @@
 		cell.label.textColor = [UIColor lightGrayColor];
 		cell.label.backgroundColor = [UIColor grayColor];
 	}
-
-	cell.selected = NO;
 	
 	return cell;
 }

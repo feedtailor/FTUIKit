@@ -69,4 +69,5 @@ typedef NS_ENUM(NSInteger, FTCalendarViewSelectionType) {
 @property (nonatomic, readonly, strong) NSDate *date;
 @property (nonatomic, readonly, weak) FTCalendarView *calendarView;
 
+- (void)prepareForReuse;
 @end

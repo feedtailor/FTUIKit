@@ -4,6 +4,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, FTCalendarViewSelectionType) {
+    FTCalendarViewSelectionTypeSingle = 0,
+    FTCalendarViewSelectionTypeMultiple
+};
+
 @protocol FTCalenderViewDataSource;
 @protocol FTCalenderViewDelegate;
 
@@ -16,6 +21,8 @@
 @property (nonatomic, readonly) NSCalendar *calendar;	// gregorianCalendar
 @property (nonatomic, assign) NSInteger startWeekday;	// 1..7. 1 = sunday (default)
 @property (nonatomic, strong) NSDate *currentDate;
+
+@property (nonatomic, assign) FTCalendarViewSelectionType selectionType;
 
 @property (nonatomic, weak) id <FTCalenderViewDataSource> dataSource;
 @property (nonatomic, weak) id <FTCalenderViewDelegate> delegate;

@@ -122,6 +122,8 @@
 		self.currentDate = now;
 
 		cellQueue_ = [NSMutableDictionary dictionary];
+        
+        self.selectionType = FTCalendarViewSelectionTypeSingle;
     }
     return self;
 }
@@ -292,6 +294,12 @@
 
 - (void)handleCellTap:(FTCalenderViewCell *)cell
 {
+    if (self.selectionType == FTCalendarViewSelectionTypeSingle) {
+        for(FTCalenderViewCell *cell in self.subviews) {
+            cell.selected = NO;
+        }
+    }
+
 	if([delegate_ respondsToSelector:@selector(calenderView:didSelectCell:)]) {
 		[delegate_ calenderView:self didSelectCell:cell];
 	}

@@ -4,27 +4,34 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol FTCalenderViewDataSource;
-@protocol FTCalenderViewDelegate;
+typedef NS_ENUM(NSInteger, FTCalendarViewSelectionType) {
+    FTCalendarViewSelectionTypeSingle = 0,
+    FTCalendarViewSelectionTypeMultiple
+};
 
-@class FTCalenderViewCell;
+@protocol FTCalendarViewDataSource;
+@protocol FTCalendarViewDelegate;
+
+@class FTCalendarViewCell;
 
 #pragma mark -
 
-@interface FTCalenderView : UIView
+@interface FTCalendarView : UIView
 
 @property (nonatomic, readonly) NSCalendar *calendar;	// gregorianCalendar
 @property (nonatomic, assign) NSInteger startWeekday;	// 1..7. 1 = sunday (default)
 @property (nonatomic, strong) NSDate *currentDate;
 
-@property (nonatomic, weak) id <FTCalenderViewDataSource> dataSource;
-@property (nonatomic, weak) id <FTCalenderViewDelegate> delegate;
+@property (nonatomic, assign) FTCalendarViewSelectionType selectionType;
+
+@property (nonatomic, weak) id <FTCalendarViewDataSource> dataSource;
+@property (nonatomic, weak) id <FTCalendarViewDelegate> delegate;
 
 - (BOOL)currentMonthContainsDate:(NSDate *)date;
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
 
-- (FTCalenderViewCell *)cellForDate:(NSDate *)date;
+- (FTCalendarViewCell *)cellForDate:(NSDate *)date;
 - (void)offsetMonth:(NSInteger)offsetMonth;
 
 - (CGRect)frameForCellAtColumn:(int)column row:(int)row;
@@ -35,20 +42,20 @@
 
 #pragma mark -
 
-@protocol FTCalenderViewDataSource <NSObject>
+@protocol FTCalendarViewDataSource <NSObject>
 @required
-- (FTCalenderViewCell *)calenderView:(FTCalenderView *)calenderView cellForDate:(NSDate *)date;
+- (FTCalendarViewCell *)calendarView:(FTCalendarView *)calendarView cellForDate:(NSDate *)date;
 @end
 
-@protocol FTCalenderViewDelegate <NSObject>
+@protocol FTCalendarViewDelegate <NSObject>
 @optional
-- (void)calenderView:(FTCalenderView *)calenderView didSelectCell:(FTCalenderViewCell *)cell;
+- (void)calendarView:(FTCalendarView *)calendarView didSelectCell:(FTCalendarViewCell *)cell;
 @end
 
 
 #pragma mark -
 
-@interface FTCalenderViewCell : UIView
+@interface FTCalendarViewCell : UIView
 
 - (id)initWithIdentifier:(NSString *)identifier;
 
@@ -60,6 +67,7 @@
 @property (nonatomic, readonly) NSString *identifier;
 @property (nonatomic, readonly) UIView *contentView;
 @property (nonatomic, readonly, strong) NSDate *date;
-@property (nonatomic, readonly, weak) FTCalenderView *calenderView;
+@property (nonatomic, readonly, weak) FTCalendarView *calendarView;
 
+- (void)prepareForReuse;
 @end

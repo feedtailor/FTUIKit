@@ -63,6 +63,8 @@
 		BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED0AC8115102F0500BFD219 /* MainMenuViewController.m */; };
 		BEEE5D0F16439D5F005773CC /* FTUIViewController+Rotation.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */; };
 		BEEE5D1016439D5F005773CC /* FTUIViewController+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */; };
+		BEF471B01716545E00AAB688 /* FTMultiValueSelectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */; };
+		BEF471B11716545E00AAB688 /* FTMultiValueSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF471AF1716545E00AAB688 /* FTMultiValueSelectViewController.m */; };
 		BEF9FE88153E86E000C30B99 /* FTUIAlertView+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */; };
 		BEF9FE89153E86E000C30B99 /* FTUIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */; };
 		BEF9FEB4153E9CB700C30B99 /* FTUIActionSheet+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */; };
@@ -147,6 +149,8 @@
 		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIViewController+Rotation.h"; sourceTree = "<group>"; };
 		BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIViewController+Rotation.m"; sourceTree = "<group>"; };
+		BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMultiValueSelectViewController.h; sourceTree = "<group>"; };
+		BEF471AF1716545E00AAB688 /* FTMultiValueSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMultiValueSelectViewController.m; sourceTree = "<group>"; };
 		BEF9FE86153E86E000C30B99 /* FTUIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIAlertView+Block.h"; sourceTree = "<group>"; };
 		BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIAlertView+Block.m"; sourceTree = "<group>"; };
 		BEF9FEB2153E9CB700C30B99 /* FTUIActionSheet+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIActionSheet+Block.h"; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 				BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */,
 				5793A79F16DDE0430082EB02 /* FTFeedback.h */,
 				5793A7A016DDE0430082EB02 /* FTFeedback.m */,
+				BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */,
+				BEF471AF1716545E00AAB688 /* FTMultiValueSelectViewController.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				BE9F0ACE1548E38700CC7AD9 /* FTUIToolbar+Utilities.h in Headers */,
 				BEEE5D0F16439D5F005773CC /* FTUIViewController+Rotation.h in Headers */,
 				5793A7A116DDE0430082EB02 /* FTFeedback.h in Headers */,
+				BEF471B01716545E00AAB688 /* FTMultiValueSelectViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +500,7 @@
 				BE9F0ACF1548E38700CC7AD9 /* FTUIToolbar+Utilities.m in Sources */,
 				BEEE5D1016439D5F005773CC /* FTUIViewController+Rotation.m in Sources */,
 				5793A7A216DDE0430082EB02 /* FTFeedback.m in Sources */,
+				BEF471B11716545E00AAB688 /* FTMultiValueSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

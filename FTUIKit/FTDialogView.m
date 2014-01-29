@@ -514,7 +514,7 @@ shouldAutorotateToInterfaceOrientationBlock:aShouldAutorotateToInterfaceOrientat
 	[button setTitleShadowColor:[UIColor blackColor] forState:UIControlStateNormal];
 	
 	button.titleLabel.font = [[self class] largeFont];
-	button.titleLabel.textAlignment = UITextAlignmentCenter;
+	button.titleLabel.textAlignment = NSTextAlignmentCenter;
 	button.titleLabel.shadowOffset = CGSizeMake(0, -1);
 
 	return button;
@@ -545,7 +545,7 @@ shouldAutorotateToInterfaceOrientationBlock:aShouldAutorotateToInterfaceOrientat
 
 
 	if(title) {
-		UILineBreakMode lineBreakMode = UILineBreakModeWordWrap;
+		NSLineBreakMode lineBreakMode = NSLineBreakByWordWrapping;
 		CGSize maxSize = CGSizeMake(kLabelWidth, FLT_MAX);
 		UIFont *font = [[self class] largeFont];
 		CGSize textSize = [title sizeWithFont:font constrainedToSize:maxSize lineBreakMode:lineBreakMode];
@@ -554,7 +554,7 @@ shouldAutorotateToInterfaceOrientationBlock:aShouldAutorotateToInterfaceOrientat
 		titleLabel.backgroundColor = nil;
 		titleLabel.textColor = [UIColor whiteColor];
 		titleLabel.font = font;
-		titleLabel.textAlignment = UITextAlignmentCenter;
+		titleLabel.textAlignment = NSTextAlignmentCenter;
 		titleLabel.shadowColor = [UIColor blackColor];
 		titleLabel.shadowOffset = CGSizeMake(0, -1);
 		titleLabel.lineBreakMode = lineBreakMode;

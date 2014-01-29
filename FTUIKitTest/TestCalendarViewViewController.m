@@ -23,7 +23,7 @@
 	if(self) {
 		label_ = [[UILabel alloc] initWithFrame:CGRectZero];
 		label_.font = [UIFont boldSystemFontOfSize:14];
-		label_.textAlignment = UITextAlignmentCenter;
+		label_.textAlignment = NSTextAlignmentCenter;
 		label_.textColor = [UIColor whiteColor];
 		label_.highlightedTextColor = [UIColor redColor];
 		label_.numberOfLines = 0;		

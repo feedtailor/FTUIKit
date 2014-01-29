@@ -70,7 +70,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		cell.textLabel.adjustsFontSizeToFitWidth = YES;
-		cell.textLabel.minimumFontSize = [UIFont smallSystemFontSize];
+		cell.textLabel.minimumScaleFactor = 0.5;
 	}
 
 	cell.textLabel.text = (indexPath.section == 0) ? [viewControllerNames objectAtIndex:indexPath.row] : @"Feedback";

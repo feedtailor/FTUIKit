@@ -42,7 +42,6 @@
 		BEF7FFFA1761AAB400B70409 /* FTUIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FE87153E86E000C30B99 /* FTUIAlertView+Block.m */; };
 		BEF7FFFB1761AAB400B70409 /* FTUIActionSheet+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */; };
 		BEF7FFFC1761AAB400B70409 /* FTUIToolbar+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */; };
-		BEF7FFFD1761AAB400B70409 /* FTUIViewController+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */; };
 		BEF7FFFE1761AAB400B70409 /* FTFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793A7A016DDE0430082EB02 /* FTFeedback.m */; };
 		BEF7FFFF1761AAB400B70409 /* FTMultiValueSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF471AF1716545E00AAB688 /* FTMultiValueSelectViewController.m */; };
 /* End PBXBuildFile section */
@@ -108,8 +107,6 @@
 		BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTActivityIndicatorDialogView.m; sourceTree = "<group>"; };
 		BED0AC8015102F0500BFD219 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUIViewController+Rotation.h"; sourceTree = "<group>"; };
-		BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIViewController+Rotation.m"; sourceTree = "<group>"; };
 		BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMultiValueSelectViewController.h; sourceTree = "<group>"; };
 		BEF471AF1716545E00AAB688 /* FTMultiValueSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMultiValueSelectViewController.m; sourceTree = "<group>"; };
 		BEF7FFE31761AA9B00B70409 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -236,8 +233,6 @@
 				BEF9FEB3153E9CB700C30B99 /* FTUIActionSheet+Block.m */,
 				BE9F0ACC1548E38700CC7AD9 /* FTUIToolbar+Utilities.h */,
 				BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */,
-				BEEE5D0D16439D5F005773CC /* FTUIViewController+Rotation.h */,
-				BEEE5D0E16439D5F005773CC /* FTUIViewController+Rotation.m */,
 				5793A79F16DDE0430082EB02 /* FTFeedback.h */,
 				5793A7A016DDE0430082EB02 /* FTFeedback.m */,
 				BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */,
@@ -403,7 +398,6 @@
 				BEF7FFFA1761AAB400B70409 /* FTUIAlertView+Block.m in Sources */,
 				BEF7FFFB1761AAB400B70409 /* FTUIActionSheet+Block.m in Sources */,
 				BEF7FFFC1761AAB400B70409 /* FTUIToolbar+Utilities.m in Sources */,
-				BEF7FFFD1761AAB400B70409 /* FTUIViewController+Rotation.m in Sources */,
 				BEF7FFFE1761AAB400B70409 /* FTFeedback.m in Sources */,
 				BEF7FFFF1761AAB400B70409 /* FTMultiValueSelectViewController.m in Sources */,
 			);

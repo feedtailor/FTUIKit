@@ -17,6 +17,7 @@
 		57E5D7D214FF097E00FD044D /* TestDialogViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E5D7D114FF097E00FD044D /* TestDialogViewViewController.xib */; };
 		BE5265A31510335B00C4C909 /* TestCalendarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5265A11510335B00C4C909 /* TestCalendarViewViewController.m */; };
 		BE5265A41510335B00C4C909 /* TestCalendarViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5265A21510335B00C4C909 /* TestCalendarViewViewController.xib */; };
+		BEC7D7AC1898EB5B00553A2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEC7D7AB1898EB5B00553A2B /* Default-568h@2x.png */; };
 		BED0AC8215102F0500BFD219 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED0AC8115102F0500BFD219 /* MainMenuViewController.m */; };
 		BEF7FFE41761AA9B00B70409 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF7FFE31761AA9B00B70409 /* QuartzCore.framework */; };
 		BEF7FFE61761AAA000B70409 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF7FFE51761AAA000B70409 /* MessageUI.framework */; };
@@ -105,6 +106,7 @@
 		BE9F0ACD1548E38700CC7AD9 /* FTUIToolbar+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUIToolbar+Utilities.m"; sourceTree = "<group>"; };
 		BEA15DDB1509F1B800CDB701 /* FTActivityIndicatorDialogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTActivityIndicatorDialogView.h; sourceTree = "<group>"; };
 		BEA15DDC1509F1B800CDB701 /* FTActivityIndicatorDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTActivityIndicatorDialogView.m; sourceTree = "<group>"; };
+		BEC7D7AB1898EB5B00553A2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BED0AC8015102F0500BFD219 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		BED0AC8115102F0500BFD219 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		BEF471AE1716545E00AAB688 /* FTMultiValueSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMultiValueSelectViewController.h; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 		57E5D7BF14FF08CC00FD044D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEC7D7AB1898EB5B00553A2B /* Default-568h@2x.png */,
 				57E5D7C014FF08CC00FD044D /* FTUIKitTest-Info.plist */,
 				57E5D7C114FF08CC00FD044D /* InfoPlist.strings */,
 				57E5D7C414FF08CC00FD044D /* main.m */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E5D7C314FF08CC00FD044D /* InfoPlist.strings in Resources */,
+				BEC7D7AC1898EB5B00553A2B /* Default-568h@2x.png in Resources */,
 				57E5D7D214FF097E00FD044D /* TestDialogViewViewController.xib in Resources */,
 				BE5265A41510335B00C4C909 /* TestCalendarViewViewController.xib in Resources */,
 			);

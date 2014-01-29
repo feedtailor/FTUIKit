@@ -77,7 +77,7 @@
 	}];
 	[dialog show];
 	[dialog setDidClickWithIndexButtonBlock:^(NSInteger idx) {
-		NSLog(@"button %d clicked", idx + 1);
+		NSLog(@"button %d clicked", (int)(idx + 1));
 	}];
 }
 
@@ -99,7 +99,7 @@
 	FTDialogView* dialog = [[FTDialogView alloc] initWithTitle:@"タイトルB" contentView:indicator button0Title:@"ボタン1" button1Title:@"ボタン2" rotateDelegate:self];
 	[dialog show];
 	[dialog setDidClickWithIndexButtonBlock:^(NSInteger idx) {
-		NSLog(@"button %d clicked", idx + 1);
+		NSLog(@"button %d clicked", (int)(idx + 1));
 	}];
 }
 

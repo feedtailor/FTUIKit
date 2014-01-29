@@ -17,7 +17,7 @@
 	colorSpace = CGColorSpaceCreateDeviceRGB();
 	
 	// create a bitmap graphics context the size of the image
-	mainViewContentContext = CGBitmapContextCreate (NULL, width, height, 8, 0, colorSpace, kCGImageAlphaPremultipliedLast);
+	mainViewContentContext = CGBitmapContextCreate (NULL, width, height, 8, 0, colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
 	
 	// free the rgb colorspace
 	CGColorSpaceRelease(colorSpace);

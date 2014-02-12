@@ -16,6 +16,7 @@
 
 	MainMenuViewController *vc = [[MainMenuViewController alloc] init];
 	UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+	navi.navigationBar.translucent = NO;
 	self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     return YES;

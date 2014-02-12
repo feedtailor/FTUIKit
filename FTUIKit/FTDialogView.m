@@ -546,10 +546,8 @@ shouldAutorotateToInterfaceOrientationBlock:aShouldAutorotateToInterfaceOrientat
 
 	if(title) {
 		NSLineBreakMode lineBreakMode = NSLineBreakByWordWrapping;
-		CGSize maxSize = CGSizeMake(kLabelWidth, FLT_MAX);
 		UIFont *font = [[self class] largeFont];
-		CGSize textSize = [title sizeWithFont:font constrainedToSize:maxSize lineBreakMode:lineBreakMode];
-		titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(kLabelMargin, kAlertTopMargin, kLabelWidth, textSize.height)];
+		titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 		titleLabel.opaque = NO;
 		titleLabel.backgroundColor = nil;
 		titleLabel.textColor = [UIColor whiteColor];
@@ -560,6 +558,11 @@ shouldAutorotateToInterfaceOrientationBlock:aShouldAutorotateToInterfaceOrientat
 		titleLabel.lineBreakMode = lineBreakMode;
 		titleLabel.numberOfLines = 0;
 		titleLabel.text = title;
+		
+		CGSize maxSize = CGSizeMake(kLabelWidth, FLT_MAX);
+		CGSize labelSize =  [titleLabel sizeThatFits:maxSize];
+		CGRect labelFrame = CGRectMake(kLabelMargin, kAlertTopMargin, kLabelWidth, labelSize.height);
+		titleLabel.frame = labelFrame;
 	}
 
 	if(button0Title) {

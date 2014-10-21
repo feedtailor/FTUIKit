@@ -1,0 +1,12 @@
+# Mac
+.DS_Store
+
+# Xcode
+build/
+
+xcuserdata/
+**/*.xcodeproj/project.xcworkspace/
+*.xccheckout
+
+# CocoaPods
+Pods/

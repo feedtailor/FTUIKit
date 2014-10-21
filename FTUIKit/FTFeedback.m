@@ -35,7 +35,7 @@
     
     NSDictionary* infoDic = [[NSBundle mainBundle] infoDictionary];
     NSString* appname = [infoDic objectForKey:@"CFBundleDisplayName"];
-    NSString* appver = [infoDic objectForKey:@"CFBundleVersion"];
+    NSString* appver = [infoDic objectForKey:@"CFBundleShortVersionString"];
     NSString* osver = [[UIDevice currentDevice] systemVersion];
     NSString* devname = [UIDevice ft_platformString];
     
